@@ -2962,8 +2962,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1708970738}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD
-=======
 --- !u!114 &1708970743
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3051,7 +3049,6 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 0
   m_Mesh: {fileID: 4300002, guid: 93ac6b9928d99f14ca5cf034199059ba, type: 3}
->>>>>>> de47259976c82350945f030289aaf3267ace4236
 --- !u!1 &1828881244
 GameObject:
   m_ObjectHideFlags: 0
@@ -3559,14 +3556,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1963047984}
   m_RootOrder: 0
-<<<<<<< HEAD
---- !u!1 &2012722946 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 100000, guid: a5ec842db8b9c5f4f93c88cff38b6a4c, type: 3}
-  m_PrefabInternal: {fileID: 316286644}
---- !u!65 &2012722949
-BoxCollider:
-=======
 --- !u!1 &2009100707 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100000, guid: 3145e345a4fa38e40bb34da8cf21d841, type: 3}
@@ -3604,7 +3593,6 @@ GameObject:
   m_PrefabInternal: {fileID: 316286644}
 --- !u!64 &2115903311
 MeshCollider:
->>>>>>> de47259976c82350945f030289aaf3267ace4236
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
