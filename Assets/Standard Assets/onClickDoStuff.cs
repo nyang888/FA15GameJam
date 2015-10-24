@@ -12,21 +12,42 @@ public class onClickDoStuff : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (isColliding == true)
+        if (isColliding == true && Input.GetMouseButtonDown(0))
         {
-            if (currentCollider.gameObject.name == "Drawer 1" && Input.GetMouseButtonDown(0))
+            switch (currentCollider.gameObject.name)
             {
-                //currentCollider.gameObject.PlayAnimation("Open Drawer 1");
-                Debug.Log("DRAWER !!!!!!");
-                currentCollider = null;
-                isColliding = false;
+                case "Drawer 1": 
+                    //currentCollider.gameObject.PlayAnimation("Open Drawer 1");
+                    //currentCollider.gameObject.GetComponent<Animation>().Play();
+                    Debug.Log("DRAWER !!!!!!");
+                    currentCollider = null;
+                    isColliding = false;
+                    break;
+                case "Phone":
+                    Debug.Log("PHONE!!!!");
+                    currentCollider = null;
+                    isColliding = false;
+                    break;
+                case "Laptop":
+                    Debug.Log("LAPTOP!!!!");
+                    currentCollider = null;
+                    isColliding = false;
+                    break;
+                case "Bed":
+                    Debug.Log("BED!!!!");
+                    currentCollider = null;
+                    isColliding = false;
+                    break;
+                default:
+                    break;
             }
+
         }
 	}
 
     void OnTriggerEnter(Collider theCollider)
     {
-        Debug.Log("OnTriggerEnter");
+        //Debug.Log("OnTriggerEnter");
         isColliding = true;
         currentCollider = theCollider;
 
@@ -34,9 +55,12 @@ public class onClickDoStuff : MonoBehaviour {
 
     void OnTriggerExit(Collider theCollider)
     {
-        Debug.Log("OnTriggerExit");
+        //Debug.Log("OnTriggerExit");
         isColliding = false;
-        currentCollider = null;
+        if (currentCollider != null)
+        {
+            currentCollider = null;
+        }
     }
 
 }
