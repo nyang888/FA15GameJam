@@ -1,0 +1,149 @@
+fileFormatVersion: 2
+guid: 729b5af6c4642224eb7f59e78688f8bc
+timeCreated: 1445724003
+licenseType: Free
+ModelImporter:
+  serializedVersion: 18
+  fileIDToRecycleName:
+    100000: Freezer_Door
+    100002: Freezer_Door 1
+    100004: Freezer_Door_Shelf_1
+    100006: Freezer_Door_Shelf_2
+    100008: FreezerThing
+    100010: //RootNode
+    100012: Fridge
+    100014: Fridge_Door
+    100016: Fridge_Door 1
+    100018: Fridge_Door_Shelf_1
+    100020: Fridge_Door_Shelf_2
+    100022: Fridge_Door_Shelf_3
+    100024: Fridge_Drawer_1
+    100026: Fridge_Drawer_2
+    100028: Fridge_Shelf_1
+    100030: Fridge_Shelf_2
+    100032: Fridge_Shelf_3
+    400000: Freezer_Door
+    400002: Freezer_Door 1
+    400004: Freezer_Door_Shelf_1
+    400006: Freezer_Door_Shelf_2
+    400008: FreezerThing
+    400010: //RootNode
+    400012: Fridge
+    400014: Fridge_Door
+    400016: Fridge_Door 1
+    400018: Fridge_Door_Shelf_1
+    400020: Fridge_Door_Shelf_2
+    400022: Fridge_Door_Shelf_3
+    400024: Fridge_Drawer_1
+    400026: Fridge_Drawer_2
+    400028: Fridge_Shelf_1
+    400030: Fridge_Shelf_2
+    400032: Fridge_Shelf_3
+    2300000: Freezer_Door 1
+    2300002: Freezer_Door_Shelf_1
+    2300004: Freezer_Door_Shelf_2
+    2300006: FreezerThing
+    2300008: Fridge
+    2300010: Fridge_Door 1
+    2300012: Fridge_Door_Shelf_1
+    2300014: Fridge_Door_Shelf_2
+    2300016: Fridge_Door_Shelf_3
+    2300018: Fridge_Drawer_1
+    2300020: Fridge_Drawer_2
+    2300022: Fridge_Shelf_1
+    2300024: Fridge_Shelf_2
+    2300026: Fridge_Shelf_3
+    3300000: Freezer_Door 1
+    3300002: Freezer_Door_Shelf_1
+    3300004: Freezer_Door_Shelf_2
+    3300006: FreezerThing
+    3300008: Fridge
+    3300010: Fridge_Door 1
+    3300012: Fridge_Door_Shelf_1
+    3300014: Fridge_Door_Shelf_2
+    3300016: Fridge_Door_Shelf_3
+    3300018: Fridge_Drawer_1
+    3300020: Fridge_Drawer_2
+    3300022: Fridge_Shelf_1
+    3300024: Fridge_Shelf_2
+    3300026: Fridge_Shelf_3
+    4300000: Fridge
+    4300002: Fridge_Shelf_3
+    4300004: Fridge_Drawer_2
+    4300006: Fridge_Drawer_1
+    4300008: Fridge_Shelf_2
+    4300010: Fridge_Shelf_1
+    4300012: FreezerThing
+    4300014: Freezer_Door
+    4300016: Freezer_Door_Shelf_1
+    4300018: Freezer_Door_Shelf_2
+    4300020: Fridge_Door
+    4300022: Fridge_Door_Shelf_3
+    4300024: Fridge_Door_Shelf_1
+    4300026: Fridge_Door_Shelf_2
+    7400000: Take 001
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+    hasTranslationDoF: 0
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
