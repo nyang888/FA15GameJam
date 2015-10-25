@@ -9,6 +9,7 @@ public class Timer : MonoBehaviour {
     public bool gameOverTriggered = false;
     public int intSeconds;
     public int intMinutes;
+    public bool showEnding = false;
 	// Update is called once per frame
 	void Update () {
         if (seconds <= 0)
@@ -24,7 +25,7 @@ public class Timer : MonoBehaviour {
                 {
                     seconds = 0;
                     minutes = 0;
-                    gameOver();
+                    showEnding = true;
                     gameOverTriggered = true;
                 }
             }
@@ -39,12 +40,12 @@ public class Timer : MonoBehaviour {
         intMinutes = (int)Math.Ceiling(minutes);
         GUI.Label(new Rect(10, 10, 1250, 20), "Time until bed:");
         GUI.Box(new Rect(125, 10, 50, 20), intMinutes.ToString() + ":" + intSeconds.ToString());
+        if (showEnding)
+        {
+            GUI.Box(new Rect(600, 300, 100, 50), "Game Over!");
+        }
     }
 
-    void gameOver()
-    {
-        Debug.Log("Game Over");  
-    }
 
 
 }

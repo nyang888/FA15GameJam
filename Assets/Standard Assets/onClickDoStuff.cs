@@ -79,4 +79,9 @@ public class onClickDoStuff : MonoBehaviour
         isColliding = false;
     }
 
+    void OnGUI()
+    {
+            GUI.Box(new Rect(1200, 40, 100, 30), currentCollider.gameObject.name);
+    }
+
 }
