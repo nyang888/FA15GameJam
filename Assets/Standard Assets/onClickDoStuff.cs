@@ -11,7 +11,8 @@ public class onClickDoStuff : MonoBehaviour
     private Collider objectThatWasPickedUp;
     private bool pickedUp = false;
     private bool NotEnoughquestTime = false;
-
+    private bool displayStudyMessage = false;
+    private float timer = 0;
     // Use this for initialization
     void Start()
     {
@@ -42,7 +43,12 @@ public class onClickDoStuff : MonoBehaviour
                 {
                     case "OpenBook":
                         Debug.Log("OpenBook");
+                        if (displayStudyMessage == false && QuestTracker.study == false)
+                        {
+                            displayStudyMessage = true;
+                        }
                         QuestTracker.study = true;
+                        
                         break;
                     case "CrumpledPaper":
                         Debug.Log("CrumpledPaper");
@@ -167,6 +173,17 @@ public class onClickDoStuff : MonoBehaviour
 
     void OnGUI()
     {
+        if (displayStudyMessage == true) {
+
+            GUI.Box(new Rect(600, 250, 250, 50), "You studied for 1 hour!");
+            if (timer >= 5)
+            {
+                displayStudyMessage = false;
+            }
+            else {
+                timer += Time.deltaTime;
+            }
+        }
         if (currentCollider != null)
         {
 			if (currentCollider != null)
@@ -219,6 +236,7 @@ public class onClickDoStuff : MonoBehaviour
             {
                 GUI.Box(new Rect(600, 250, 250, 50), "You don't have enough time \nfor the quest!! You lose!");
             }
+
         }
     }
 
