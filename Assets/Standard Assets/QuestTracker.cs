@@ -57,7 +57,7 @@ public class QuestTracker : MonoBehaviour
 
     void OnGUI()
     {
-        GUI.Box(new Rect(10, 50, 200, 500), questOne + "\n" + questTwo + "\n" + questThree + "\n" + questFour + "\n" /*+ questFive + "\n"*/ + questSix);
+        GUI.Box(new Rect(10, 50, 300, 300), questOne + "\n" + questTwo + "\n" + questThree + "\n" + questFour + "\n" /*+ questFive + "\n"*/ + questSix);
         if (shit == true && sleep == true && phone == true && internet == true && staple == true)
         {
             if (study == false)

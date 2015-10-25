@@ -3407,7 +3407,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   seconds: 0
-  minutes: 10
+  minutes: 6
   gameOverTriggered: 0
   showEnding: 0
   internetTimeDeleted: 0
@@ -3442,16 +3442,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questCompleted: ' - Completed'
-  questOne: Internet
-  questTwo: Sleep
-  questThree: Shit
-  questFour: Pick Up Phone
-  questSix: Staple
-  questOneOriginalText: Internet
-  questTwoOriginalText: Sleep
-  questThreeOriginalText: Shit
-  questFourOriginalText: Pick Up Phone
-  questSixOriginalText: Staple
+  questOne: Browse Wikipedia
+  questTwo: Take a Nap
+  questThree: Use the Toilet
+  questFour: Call Mom
+  questSix: Staple Things Together
+  questOneOriginalText: Browse Wikipedia
+  questTwoOriginalText: Take a Nap
+  questThreeOriginalText: Use the Toilet
+  questFourOriginalText: Call Mom
+  questSixOriginalText: Staple Things Together
 --- !u!1 &830945851
 GameObject:
   m_ObjectHideFlags: 0
