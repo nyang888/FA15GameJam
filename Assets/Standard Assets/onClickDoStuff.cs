@@ -16,7 +16,7 @@ public class onClickDoStuff : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) == true)
+         if (Input.GetKeyDown(KeyCode.E) == true)
         {
             Debug.Log("Message 1");
             if (isColliding == true)
@@ -25,7 +25,8 @@ public class onClickDoStuff : MonoBehaviour
                 switch (currentCollider.name)
                 {
                     case "Drawer 1":
-                        //currentCollider.gameObject.GetComponent<Animation>().Play();
+                         //.gameObject.GetComponent<Animation>().Play();
+                        //currentCollider.GetComponent<Animation>().Play("Open Drawer 1");
                         Debug.Log("DRAWER 1");
                         break;
                     case "Drawer 2":
@@ -34,13 +35,12 @@ public class onClickDoStuff : MonoBehaviour
                     case "Drawer 3":
                         Debug.Log("DRAWER 3");
                         break;
-                    case "Desk":
-                        Debug.Log("Desk");
-                        break;
                     case "Phone":
                         Debug.Log("Phone");
                         break;
+                    case "Laptop":
                     case "Laptop_Screen":
+                    case "Laptop_Bottom":
                         QuestTracker.internet = true;
                         Debug.Log("Laptop");
                         break;
@@ -54,7 +54,7 @@ public class onClickDoStuff : MonoBehaviour
                     case "TrashCan":
                         Debug.Log("TrashCan");
                         break;
-                    case "Toilet":
+                    case "Toilet2":
                         QuestTracker.shit = true;
                         Debug.Log("Toilet");
                         break;
@@ -64,6 +64,7 @@ public class onClickDoStuff : MonoBehaviour
 
             }
         }
+    
     }
 
     void OnTriggerEnter(Collider theCollider)
