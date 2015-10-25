@@ -23,6 +23,9 @@ public class QuestTracker : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Make sure cursor is hidden
+        Cursor.visible = false;
+
         if (internet == true && questOne != questOneOriginalText + questCompleted)
         {
             questOne = questOne + questCompleted;
