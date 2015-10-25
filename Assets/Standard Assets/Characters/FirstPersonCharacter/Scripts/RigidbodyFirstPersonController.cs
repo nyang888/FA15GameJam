@@ -76,6 +76,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
 
         public Camera cam;
+        public AudioSource audio;
         public MovementSettings movementSettings = new MovementSettings();
         public MouseLook mouseLook = new MouseLook();
         public AdvancedSettings advancedSettings = new AdvancedSettings();
@@ -127,6 +128,18 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private void Update()
         {
             RotateView();
+
+            if (Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.D))
+     {
+                if (!audio.isPlaying)
+                {
+                    audio.Play();
+                }
+            }
+            else
+            {
+                audio.Stop();
+            }
 
             if (CrossPlatformInputManager.GetButtonDown("Jump") && !m_Jump)
             {
