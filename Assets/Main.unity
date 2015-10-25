@@ -480,7 +480,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
+  m_Convex: 1
   m_Mesh: {fileID: 4300002, guid: e27745be8c24dfe4d9f0ff656f9501e3, type: 3}
 --- !u!1001 &316286644
 Prefab:
@@ -1821,6 +1821,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84244f95503a58546bd469f042b78d5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  questCompleted: ' - Completed'
+  questOne: Internet
+  questTwo: Sleep
+  questThree: Shit
+  questOneOriginalText: Internet
+  questTwoOriginalText: Sleep
+  questThreeOriginalText: Shit
 --- !u!1 &830945851
 GameObject:
   m_ObjectHideFlags: 0
@@ -2494,7 +2501,7 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
+  m_Convex: 1
   m_Mesh: {fileID: 4300000, guid: e27745be8c24dfe4d9f0ff656f9501e3, type: 3}
 --- !u!1 &1278311193
 GameObject:
@@ -3953,6 +3960,21 @@ MeshCollider:
   serializedVersion: 2
   m_Convex: 1
   m_Mesh: {fileID: 4300002, guid: a5ec842db8b9c5f4f93c88cff38b6a4c, type: 3}
+--- !u!54 &2115903312
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2115903307}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 126
+  m_CollisionDetection: 0
 --- !u!1 &2130656556
 GameObject:
   m_ObjectHideFlags: 0
@@ -4040,5 +4062,5 @@ MeshCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 0
+  m_Convex: 1
   m_Mesh: {fileID: 4300004, guid: e27745be8c24dfe4d9f0ff656f9501e3, type: 3}
