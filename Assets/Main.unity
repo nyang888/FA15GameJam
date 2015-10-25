@@ -2740,10 +2740,10 @@ GameObject:
   m_Component:
   - 4: {fileID: 682055265}
   - 95: {fileID: 682055268}
-  - 65: {fileID: 682055267}
   - 54: {fileID: 682055266}
+  - 64: {fileID: 682055267}
   m_Layer: 0
-  m_Name: Bed (1)
+  m_Name: Bed
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2783,18 +2783,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 126
   m_CollisionDetection: 0
---- !u!65 &682055267
-BoxCollider:
+--- !u!64 &682055267
+MeshCollider:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 682055264}
-  m_Material: {fileID: 13400000, guid: c2815a7ab32e42c4bb42f59caacb8ec1, type: 2}
+  m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 0
+  m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: .0931123942, y: .0336672477, z: .048243288}
-  m_Center: {x: -.00639728969, y: .0165499058, z: -.000860504166}
+  m_Convex: 1
+  m_Mesh: {fileID: 0}
 --- !u!95 &682055268
 Animator:
   serializedVersion: 3

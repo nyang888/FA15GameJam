@@ -39,6 +39,10 @@ public class onClickDoStuff : MonoBehaviour
                 Debug.Log("Colliding with some object");
                 switch (currentCollider.name)
                 {
+                    case "OpenBook":
+                        Debug.Log("OpenBook");
+                        QuestTracker.study = true;
+                        break;
                     case "Drawer 1":
                         //currentCollider.GetComponent<Animation>().Play("Open Drawer 1");
                         Debug.Log("DRAWER 1");
@@ -80,6 +84,11 @@ public class onClickDoStuff : MonoBehaviour
                         Debug.Log("Laptop");
                         break;
                     case "Bed":
+                    case "Bed_Base":
+                    case "Bed_Pillow":
+                    case "Bed_Pillow1":
+                    case "Bed_Post1":
+                    case "Bed_Post2":
                         QuestTracker.sleep = true;
                         Debug.Log("Bed");
                         break;
