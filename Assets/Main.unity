@@ -2360,11 +2360,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 3145e345a4fa38e40bb34da8cf21d841, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20.9599991
+      value: 18.7199993
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3145e345a4fa38e40bb34da8cf21d841, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.77999973
+      value: 8.56999969
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3145e345a4fa38e40bb34da8cf21d841, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2388,7 +2388,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3145e345a4fa38e40bb34da8cf21d841, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 16
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 3145e345a4fa38e40bb34da8cf21d841, type: 3}
       propertyPath: m_LocalScale.x
@@ -3351,9 +3351,13 @@ MonoBehaviour:
   questOne: Internet
   questTwo: Sleep
   questThree: Shit
+  questFour: Pick Up Phone
+  questFive: Study
   questOneOriginalText: Internet
   questTwoOriginalText: Sleep
   questThreeOriginalText: Shit
+  questFourOriginalText: Pick Up Phone
+  questFiveOriginalText: Study
 --- !u!1 &830945851
 GameObject:
   m_ObjectHideFlags: 0
@@ -7433,7 +7437,7 @@ MeshRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1708970738}
-  m_Enabled: 0
+  m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_Materials:
