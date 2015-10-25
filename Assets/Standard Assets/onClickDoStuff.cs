@@ -169,7 +169,52 @@ public class onClickDoStuff : MonoBehaviour
     {
         if (currentCollider != null)
         {
-            GUI.Box(new Rect(1200, 40, 100, 30), currentCollider.gameObject.name);
+			if (currentCollider != null)
+			{
+				if(currentCollider.gameObject.name == "OpenBook"){
+					GUI.Box(new Rect(1200, 40, 200, 30), "Study For Your Test");
+				}
+				else if(currentCollider.gameObject.name == "CrumpledPaper")
+				{
+					GUI.Box(new Rect(1200, 40, 200, 30), "Pick Up Paper");
+				}
+				else if(currentCollider.gameObject.name == "Soda_Can")
+				{
+					GUI.Box(new Rect(1200, 40, 200, 30), "Pick Up Soda Can");
+				}
+				else if(currentCollider.gameObject.name == "Phone")
+				{
+					GUI.Box(new Rect(1200, 40, 200, 30), "Call Mom");
+				}
+				else if(currentCollider.gameObject.name == "Lamp")
+				{
+					GUI.Box(new Rect(1200, 40, 200, 30), "Pick Up Lamp");
+				}
+				else if(currentCollider.gameObject.name == "Toilet2")
+				{
+					GUI.Box(new Rect(1200, 40, 200, 30), "Use the Toilet");
+				}
+				else if(currentCollider.gameObject.name == "Pencil")
+				{
+					GUI.Box(new Rect(1200, 40, 200, 30), "Pick up Pencil");
+				}
+				else if(currentCollider.gameObject.name == "Bed" || currentCollider.gameObject.name == "Bed_Base" || currentCollider.gameObject.name == "Bed_Pillow" || currentCollider.gameObject.name == "Bed_Pillow1" || currentCollider.gameObject.name == "Bed_Post1" || currentCollider.gameObject.name == "Bed_Post2")
+				{
+					GUI.Box(new Rect(1200, 40, 200, 30), "Take a Nap");
+				}
+				else if(currentCollider.gameObject.name == "Stapler" || currentCollider.gameObject.name == "Stapler_Bottom" || currentCollider.gameObject.name == "Stapler_Metal" || currentCollider.gameObject.name == "Stapler_Top")
+				{
+					GUI.Box(new Rect(1200, 40, 200, 30), "Staple Some Papers Together");
+				}
+				else if(currentCollider.gameObject.name == "Laptop" || currentCollider.gameObject.name == "Laptop_Screen" || currentCollider.gameObject.name == "Laptop_Bottom")
+				{
+					GUI.Box(new Rect(1200, 40, 200, 30), "Browse Wikipedia");
+				}
+				else{
+					GUI.Box(new Rect(1200, 40, 200, 30), " ");
+				}            
+			}
+
             if (NotEnoughquestTime)
             {
                 GUI.Box(new Rect(600, 250, 250, 50), "You don't have enough time \nfor the quest!! You lose!");

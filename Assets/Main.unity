@@ -3409,9 +3409,12 @@ MonoBehaviour:
   seconds: 0
   minutes: 10
   gameOverTriggered: 0
-  intSeconds: 0
-  intMinutes: 0
   showEnding: 0
+  internetTimeDeleted: 0
+  sleepTimeDeleted: 0
+  shitTimeDeleted: 0
+  phoneTimeDeleted: 0
+  stapleTimeDeleted: 0
 --- !u!54 &812155315
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -3443,13 +3446,11 @@ MonoBehaviour:
   questTwo: Sleep
   questThree: Shit
   questFour: Pick Up Phone
-  questFive: Study
   questSix: Staple
   questOneOriginalText: Internet
   questTwoOriginalText: Sleep
   questThreeOriginalText: Shit
   questFourOriginalText: Pick Up Phone
-  questFiveOriginalText: Study
   questSixOriginalText: Staple
 --- !u!1 &830945851
 GameObject:
