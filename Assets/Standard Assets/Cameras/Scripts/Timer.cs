@@ -37,7 +37,7 @@ public class Timer : MonoBehaviour {
     void OnGUI() {
         intSeconds = (int)Math.Ceiling(seconds);
         intMinutes = (int)Math.Ceiling(minutes);
-        GUI.Label(new Rect(10, 10, 1250, 20), "Time until the bed:");
+        GUI.Label(new Rect(10, 10, 1250, 20), "Time until bed:");
         GUI.Box(new Rect(125, 10, 50, 20), intMinutes.ToString() + ":" + intSeconds.ToString());
     }
 

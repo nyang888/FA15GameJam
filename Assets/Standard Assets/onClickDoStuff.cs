@@ -7,7 +7,7 @@ public class onClickDoStuff : MonoBehaviour {
     private Collider currentCollider;
 	// Use this for initialization
 	void Start () {
-	
+	    
 	}
 	
 	// Update is called once per frame
@@ -32,11 +32,13 @@ public class onClickDoStuff : MonoBehaviour {
                     Debug.Log("LAPTOP!!!!");
                     currentCollider = null;
                     isColliding = false;
+                    QuestTracker.internet = true;
                     break;
                 case "Bed":
                     Debug.Log("BED!!!!");
                     currentCollider = null;
                     isColliding = false;
+                    QuestTracker.sleep = true;
                     break;
                 default:
                     break;
