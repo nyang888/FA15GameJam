@@ -471,7 +471,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 6bff969cc6df045cba5fb302d53a84f9, type: 2}
     - target: {fileID: 100000, guid: a0624d3a59cec274eb56a88ce7aeb37a, type: 3}
       propertyPath: m_Name
-      value: CrumpledPaper (6)
+      value: CrumpledPaper
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a0624d3a59cec274eb56a88ce7aeb37a, type: 3}
@@ -1829,15 +1829,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: 0e66bae2113cf2747b1cd649400c51fc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 17.4899998
+      value: 16.5900002
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0e66bae2113cf2747b1cd649400c51fc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.10000038
+      value: 9.07999992
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0e66bae2113cf2747b1cd649400c51fc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -12.3800001
+      value: -13.1300001
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0e66bae2113cf2747b1cd649400c51fc, type: 3}
       propertyPath: m_LocalRotation.x
@@ -1857,7 +1857,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0e66bae2113cf2747b1cd649400c51fc, type: 3}
       propertyPath: m_RootOrder
-      value: 29
+      value: 36
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: 0e66bae2113cf2747b1cd649400c51fc, type: 3}
       propertyPath: m_LocalScale.x
@@ -3384,11 +3384,13 @@ MonoBehaviour:
   questThree: Shit
   questFour: Pick Up Phone
   questFive: Study
+  questSix: Staple
   questOneOriginalText: Internet
   questTwoOriginalText: Sleep
   questThreeOriginalText: Shit
   questFourOriginalText: Pick Up Phone
   questFiveOriginalText: Study
+  questSixOriginalText: Staple
 --- !u!1 &830945851
 GameObject:
   m_ObjectHideFlags: 0
@@ -3913,7 +3915,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 6bff969cc6df045cba5fb302d53a84f9, type: 2}
     - target: {fileID: 100000, guid: a0624d3a59cec274eb56a88ce7aeb37a, type: 3}
       propertyPath: m_Name
-      value: CrumpledPaper (2)
+      value: CrumpledPaper
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a0624d3a59cec274eb56a88ce7aeb37a, type: 3}
@@ -4865,6 +4867,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!64 &1225772328
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1225772324}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 1
+  m_Mesh: {fileID: 0}
 --- !u!1 &1232538273
 GameObject:
   m_ObjectHideFlags: 0
@@ -5425,7 +5439,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 6bff969cc6df045cba5fb302d53a84f9, type: 2}
     - target: {fileID: 100000, guid: a0624d3a59cec274eb56a88ce7aeb37a, type: 3}
       propertyPath: m_Name
-      value: CrumpledPaper (4)
+      value: CrumpledPaper
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a0624d3a59cec274eb56a88ce7aeb37a, type: 3}
@@ -7140,7 +7154,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 6bff969cc6df045cba5fb302d53a84f9, type: 2}
     - target: {fileID: 100000, guid: a0624d3a59cec274eb56a88ce7aeb37a, type: 3}
       propertyPath: m_Name
-      value: CrumpledPaper (3)
+      value: CrumpledPaper
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a0624d3a59cec274eb56a88ce7aeb37a, type: 3}
@@ -7202,7 +7216,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 6bff969cc6df045cba5fb302d53a84f9, type: 2}
     - target: {fileID: 100000, guid: a0624d3a59cec274eb56a88ce7aeb37a, type: 3}
       propertyPath: m_Name
-      value: CrumpledPaper (5)
+      value: CrumpledPaper
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a0624d3a59cec274eb56a88ce7aeb37a, type: 3}
@@ -7423,7 +7437,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 6bff969cc6df045cba5fb302d53a84f9, type: 2}
     - target: {fileID: 100000, guid: a0624d3a59cec274eb56a88ce7aeb37a, type: 3}
       propertyPath: m_Name
-      value: CrumpledPaper (1)
+      value: CrumpledPaper
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a0624d3a59cec274eb56a88ce7aeb37a, type: 3}
@@ -9498,7 +9512,7 @@ Prefab:
       objectReference: {fileID: 2100000, guid: 144ac0e125f6a4acc8d058be78ca7f78, type: 2}
     - target: {fileID: 100004, guid: e24f21ac296c9ce4baac3d241d20f42b, type: 3}
       propertyPath: m_Name
-      value: SodaCan (1)
+      value: SodaCan
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e24f21ac296c9ce4baac3d241d20f42b, type: 3}
@@ -9545,6 +9559,21 @@ Rigidbody:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 2145977172}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!54 &2145977184
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2145977171}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0

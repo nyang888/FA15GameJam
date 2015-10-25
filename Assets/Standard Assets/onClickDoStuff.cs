@@ -24,17 +24,8 @@ public class onClickDoStuff : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) == true)
         {
             Debug.Log("Pressed E");
-            if (pickedUp == true)
-            {
-                Debug.Log("Droping item");
-                objectThatWasPickedUp.gameObject.transform.SetParent(null);
-                objectThatWasPickedUp.attachedRigidbody.useGravity = true;
-                objectThatWasPickedUp.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
-                pickedUp = false;
-                objectThatWasPickedUp = null;
-
-            }
-            else if (isColliding == true)
+            dropObject();
+            if (isColliding == true)
             {
                 Debug.Log("Colliding with some object");
                 switch (currentCollider.name)
@@ -43,39 +34,29 @@ public class onClickDoStuff : MonoBehaviour
                         Debug.Log("OpenBook");
                         QuestTracker.study = true;
                         break;
-                    case "Drawer 1":
-                        //currentCollider.GetComponent<Animation>().Play("Open Drawer 1");
-                        Debug.Log("DRAWER 1");
+                    case "CrumpledPaper":
+                        Debug.Log("CrumpledPaper");
+                        pickUpObject();
                         break;
-                    case "Drawer 2":
-                        Debug.Log("DRAWER 2");
+                    case "Soda_Can":
+                        Debug.Log("Soda Can");
+                        pickUpObject();
                         break;
-                    case "Drawer 3":
-                        Debug.Log("DRAWER 3");
+                    case "Stapler":
+                    case "Stapler_Bottom":
+                    case "Stapler_Metal":
+                    case "Stapler_Top":
+                        Debug.Log("Stapler");
+                        QuestTracker.staple = true;
+                        break;
+                    case "Lamp":
+                        Debug.Log("Lamp");
+                        pickUpObject();
                         break;
                     case "Phone":
                         Debug.Log("Phone");
                         QuestTracker.phone = true;
-                        if (pickedUp == false)
-                        {
-                            Debug.Log("Picking up item");
-
-                            currentCollider.gameObject.transform.SetParent(Cube.transform);
-                            currentCollider.attachedRigidbody.useGravity = false;
-
-                            currentCollider.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
-
-
-
-                            //currentCollider.gameObject.GetComponent<Transform>().position.Set(0, 0, 0);
-                            //currentCollider.gameObject.GetComponent<Transform>().rotation.Set(80, 180, 0, 1);
-                            //currentCollider.gameObject.GetComponent<Transform>().Rotate(new Vector3(80, 180, 0));
-                            //currentCollider.gameObject.transform.position.Set(0, 0, 0);
-                            //currentCollider.gameObject.transform.rotation.Set(80, 180, 0, 1);
-                            objectThatWasPickedUp = currentCollider;
-
-                            pickedUp = true;
-                        }
+                        pickUpObject();
                         break;
                     case "Laptop":
                     case "Laptop_Screen":
@@ -101,6 +82,16 @@ public class onClickDoStuff : MonoBehaviour
                     case "Toilet2":
                         QuestTracker.shit = true;
                         Debug.Log("Toilet");
+                        break;
+                    case "Drawer 1":
+                        //currentCollider.GetComponent<Animation>().Play("Open Drawer 1");
+                        Debug.Log("DRAWER 1");
+                        break;
+                    case "Drawer 2":
+                        Debug.Log("DRAWER 2");
+                        break;
+                    case "Drawer 3":
+                        Debug.Log("DRAWER 3");
                         break;
                     default:
                         break;
@@ -132,4 +123,39 @@ public class onClickDoStuff : MonoBehaviour
         }
     }
 
+    void pickUpObject()
+    {
+        if (pickedUp == false)
+        {
+            Debug.Log("Picking up item");
+
+            currentCollider.gameObject.transform.SetParent(Cube.transform);
+            currentCollider.attachedRigidbody.useGravity = false;
+
+            currentCollider.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezeAll;
+
+            //currentCollider.gameObject.GetComponent<Transform>().position.Set(0, 0, 0);
+            //currentCollider.gameObject.GetComponent<Transform>().rotation.Set(80, 180, 0, 1);
+            //currentCollider.gameObject.GetComponent<Transform>().Rotate(new Vector3(80, 180, 0));
+            //currentCollider.gameObject.transform.position.Set(0, 0, 0);
+            //currentCollider.gameObject.transform.rotation.Set(80, 180, 0, 1);
+            objectThatWasPickedUp = currentCollider;
+
+            pickedUp = true;
+        }
+    }
+
+    void dropObject()
+    {
+        if (pickedUp == true)
+        {
+            Debug.Log("Droping item");
+            objectThatWasPickedUp.gameObject.transform.SetParent(null);
+            objectThatWasPickedUp.attachedRigidbody.useGravity = true;
+            objectThatWasPickedUp.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+            pickedUp = false;
+            objectThatWasPickedUp = null;
+
+        }
+    }
 }
