@@ -15,6 +15,8 @@ public class Timer : MonoBehaviour {
     public bool shitTimeDeleted = false;
     public bool phoneTimeDeleted = false;
     public bool stapleTimeDeleted = false;
+    public bool studyTimeDeleted = false;
+    
 	// Update is called once per frame
 	void Update () {
         if (seconds <= 0)
@@ -77,6 +79,14 @@ public class Timer : MonoBehaviour {
             {
                 minutes--;
                 stapleTimeDeleted = true;
+            }
+        }
+        if (QuestTracker.study)
+        {
+            if (studyTimeDeleted == false)
+            {
+                minutes--;
+                studyTimeDeleted = true;
             }
         }
 	}
