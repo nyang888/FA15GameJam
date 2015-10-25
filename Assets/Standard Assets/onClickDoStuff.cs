@@ -6,6 +6,8 @@ public class onClickDoStuff : MonoBehaviour
 
     private bool isColliding = false;
     private Collider currentCollider;
+
+    public AudioSource audio;
     //private GameObject mainCamera;
     private GameObject Cube;
     private Collider objectThatWasPickedUp;
@@ -130,6 +132,10 @@ public class onClickDoStuff : MonoBehaviour
                         else
                         {
                             NotEnoughquestTime = true;
+                        }
+                        if (!audio.isPlaying)
+                        {
+                            audio.Play();
                         }
                         Debug.Log("Toilet");
                         break;
