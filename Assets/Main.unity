@@ -2414,7 +2414,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 400000, guid: d5e634e7c3870114ea8275b320b97a2d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 27.8799992
+      value: 28.0499992
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d5e634e7c3870114ea8275b320b97a2d, type: 3}
       propertyPath: m_LocalPosition.y
@@ -2422,27 +2422,27 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d5e634e7c3870114ea8275b320b97a2d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 13.6899996
+      value: 14.6899996
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d5e634e7c3870114ea8275b320b97a2d, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 7.12321135e-09
+      value: 5.08074072e-09
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d5e634e7c3870114ea8275b320b97a2d, type: 3}
       propertyPath: m_LocalRotation.y
-      value: .233731061
+      value: .119391933
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d5e634e7c3870114ea8275b320b97a2d, type: 3}
       propertyPath: m_LocalRotation.z
-      value: -1.71969532e-08
+      value: -1.79070199e-08
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d5e634e7c3870114ea8275b320b97a2d, type: 3}
       propertyPath: m_LocalRotation.w
-      value: .972301304
+      value: .992847204
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d5e634e7c3870114ea8275b320b97a2d, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 400000, guid: d5e634e7c3870114ea8275b320b97a2d, type: 3}
       propertyPath: m_LocalScale.x
@@ -7495,8 +7495,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 3, y: 3, z: 3}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3, y: 3, z: 12.1108627}
+  m_Center: {x: -1.64903531e-06, y: -1.22718916e-06, z: 4.55542564}
 --- !u!33 &1708970742
 MeshFilter:
   m_ObjectHideFlags: 0
