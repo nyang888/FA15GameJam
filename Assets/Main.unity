@@ -4039,12 +4039,27 @@ MeshCollider:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1002810797}
-  m_Material: {fileID: 13400000, guid: e52fb17f9b1e7fd48b8955f1391d3688, type: 2}
+  m_Material: {fileID: 13400000, guid: 3aeb7dadc0c69d54d9e5777e9d5631f1, type: 2}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Convex: 1
+  m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: 928dabfdee23b4247a21569a427f3286, type: 3}
+--- !u!54 &1002810802
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1002810797}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 1
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &1014273000
 GameObject:
   m_ObjectHideFlags: 0
@@ -4623,7 +4638,6 @@ GameObject:
   - 4: {fileID: 1158372164}
   - 33: {fileID: 1158372166}
   - 23: {fileID: 1158372165}
-  - 64: {fileID: 1158372167}
   m_Layer: 0
   m_Name: Bed_Mattress
   m_TagString: Untagged
@@ -4675,18 +4689,6 @@ MeshFilter:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1158372163}
-  m_Mesh: {fileID: 4300000, guid: 367c09510d5a8b14391010a2f1430aed, type: 3}
---- !u!64 &1158372167
-MeshCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1158372163}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 0
-  serializedVersion: 2
-  m_Convex: 1
   m_Mesh: {fileID: 4300000, guid: 367c09510d5a8b14391010a2f1430aed, type: 3}
 --- !u!1001 &1173672650
 Prefab:
@@ -5964,10 +5966,25 @@ MeshCollider:
   m_GameObject: {fileID: 1475957236}
   m_Material: {fileID: 13400000, guid: e52fb17f9b1e7fd48b8955f1391d3688, type: 2}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
-  m_Convex: 1
+  m_Convex: 0
   m_Mesh: {fileID: 4300000, guid: 928dabfdee23b4247a21569a427f3286, type: 3}
+--- !u!54 &1475957241
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1475957236}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: .0500000007
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 2
 --- !u!1 &1482011430 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 100002, guid: ca95be13e24df5446a5d8312e98acd05, type: 3}
@@ -8649,7 +8666,7 @@ MeshCollider:
   m_GameObject: {fileID: 1980226674}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Convex: 1
   m_Mesh: {fileID: 4300006, guid: 367c09510d5a8b14391010a2f1430aed, type: 3}
