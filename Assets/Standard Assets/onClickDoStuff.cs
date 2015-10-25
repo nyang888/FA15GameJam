@@ -118,7 +118,10 @@ public class onClickDoStuff : MonoBehaviour
 
     void OnGUI()
     {
-        GUI.Box(new Rect(1200, 40, 100, 30), currentCollider.gameObject.name);
+        if (currentCollider != null)
+        {
+            GUI.Box(new Rect(1200, 40, 100, 30), currentCollider.gameObject.name);
+        }
     }
 
 }
