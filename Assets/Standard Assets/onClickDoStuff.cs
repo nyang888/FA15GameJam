@@ -29,9 +29,7 @@ public class onClickDoStuff : MonoBehaviour
                 Debug.Log("Droping item");
                 objectThatWasPickedUp.gameObject.transform.SetParent(null);
                 objectThatWasPickedUp.attachedRigidbody.useGravity = true;
-                objectThatWasPickedUp = currentCollider;
-                currentCollider.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
-                //RigidbodyConstraints.None;
+                objectThatWasPickedUp.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
                 pickedUp = false;
                 objectThatWasPickedUp = null;
 
@@ -65,8 +63,9 @@ public class onClickDoStuff : MonoBehaviour
 
 
 
-                            currentCollider.gameObject.GetComponent<Transform>().position.Set(0, 0, 0);
-                            currentCollider.gameObject.GetComponent<Transform>().rotation.Set(80, 180, 0, 1);
+                            //currentCollider.gameObject.GetComponent<Transform>().position.Set(0, 0, 0);
+                            //currentCollider.gameObject.GetComponent<Transform>().rotation.Set(80, 180, 0, 1);
+                            //currentCollider.gameObject.GetComponent<Transform>().Rotate(new Vector3(80, 180, 0));
                             //currentCollider.gameObject.transform.position.Set(0, 0, 0);
                             //currentCollider.gameObject.transform.rotation.Set(80, 180, 0, 1);
                             objectThatWasPickedUp = currentCollider;
