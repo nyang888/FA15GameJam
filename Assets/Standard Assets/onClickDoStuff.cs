@@ -25,7 +25,16 @@ public class onClickDoStuff : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E) == true)
         {
             Debug.Log("Pressed E");
-            dropObject();
+            if (pickedUp == true)
+            {
+                //dropObject();
+                Debug.Log("Droping item");
+                objectThatWasPickedUp.gameObject.transform.SetParent(null);
+                objectThatWasPickedUp.attachedRigidbody.useGravity = true;
+                objectThatWasPickedUp.gameObject.GetComponent<Rigidbody>().constraints = RigidbodyConstraints.None;
+                pickedUp = false;
+                objectThatWasPickedUp = null;
+            }
             if (isColliding == true)
             {
                 Debug.Log("Colliding with some object");
@@ -41,6 +50,10 @@ public class onClickDoStuff : MonoBehaviour
                         break;
                     case "Soda_Can":
                         Debug.Log("Soda Can");
+                        pickUpObject();
+                        break;
+                    case "Pencil":
+                        Debug.Log("Pencil");
                         pickUpObject();
                         break;
                     case "Stapler":
@@ -186,7 +199,7 @@ public class onClickDoStuff : MonoBehaviour
         }
     }
 
-    void dropObject()
+    /*void dropObject()
     {
         if (pickedUp == true)
         {
@@ -198,5 +211,5 @@ public class onClickDoStuff : MonoBehaviour
             objectThatWasPickedUp = null;
 
         }
-    }
+    }*/
 }

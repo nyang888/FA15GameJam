@@ -14,13 +14,13 @@ public class QuestTracker : MonoBehaviour
     public string questTwo = "Sleep";
     public string questThree = "Shit";
     public string questFour = "Pick Up Phone";
-    public string questFive = "Study";
+    //public string questFive = "Study";
     public string questSix = "Staple";
     public string questOneOriginalText = "Internet";
     public string questTwoOriginalText = "Sleep";
     public string questThreeOriginalText = "Shit";
     public string questFourOriginalText = "Pick Up Phone";
-    public string questFiveOriginalText = "Study";
+    //public string questFiveOriginalText = "Study";
     public string questSixOriginalText = "Staple";
     // Update is called once per frame
     void Update()
@@ -45,10 +45,10 @@ public class QuestTracker : MonoBehaviour
             questFour = questFour + questCompleted;
 
         }
-        else if (study == true && questFive != questFiveOriginalText + questCompleted)
+        /*else if (study == true && questFive != questFiveOriginalText + questCompleted)
         {
             questFive = questFive + questCompleted;
-        }
+        }*/
         else if (staple == true && questSix != questSixOriginalText + questCompleted)
         {
             questSix = questSix + questCompleted;
@@ -57,7 +57,7 @@ public class QuestTracker : MonoBehaviour
 
     void OnGUI()
     {
-        GUI.Box(new Rect(10, 50, 200, 500), questOne + "\n" + questTwo + "\n" + questThree + "\n" + questFour + "\n" + questFive + "\n" + questSix);
+        GUI.Box(new Rect(10, 50, 200, 500), questOne + "\n" + questTwo + "\n" + questThree + "\n" + questFour + "\n" /*+ questFive + "\n"*/ + questSix);
         if (shit == true && sleep == true && phone == true && internet == true && staple == true)
         {
             if (study == false)
