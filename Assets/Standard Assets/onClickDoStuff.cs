@@ -25,6 +25,10 @@ public class onClickDoStuff : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if(Input.GetKeyDown(KeyCode.Escape) == true)
+        {
+            Application.Quit();
+        }
         if (Input.GetKeyDown(KeyCode.E) == true)
         {
             Debug.Log("Pressed E");
