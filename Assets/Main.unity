@@ -410,7 +410,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 742af209ad41b0c41a236ff68748b4cd, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 2f653aeda06c15043be5e9be4d5b2f40, type: 3}
   m_PlayOnAwake: 1
   m_Volume: .5
   m_Pitch: 1
@@ -2213,6 +2213,7 @@ MonoBehaviour:
   gameOverTriggered: 0
   intSeconds: 0
   intMinutes: 0
+  showEnding: 0
 --- !u!54 &812155315
 Rigidbody:
   m_ObjectHideFlags: 0
