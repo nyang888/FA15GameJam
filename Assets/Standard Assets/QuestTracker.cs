@@ -58,6 +58,17 @@ public class QuestTracker : MonoBehaviour
     void OnGUI()
     {
         GUI.Box(new Rect(10, 50, 200, 500), questOne + "\n" + questTwo + "\n" + questThree + "\n" + questFour + "\n" + questFive + "\n" + questSix);
+        if (shit == true && sleep == true && phone == true && internet == true && staple == true)
+        {
+            if (study == false)
+            {
+                GUI.Box(new Rect(600, 250, 250, 100), "OOOH No! you completed the quest\n but you didn't study and have\n exam tomorrow! You failed!!!!");
+            }
+            else
+            {
+                GUI.Box(new Rect(600, 250, 250, 100), "Congratulation! You complete the quests\n and complete studying for the\n exam tomorrow! You win!");
+            }
+        }
     }
 
 }

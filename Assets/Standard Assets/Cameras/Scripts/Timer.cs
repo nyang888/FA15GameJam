@@ -7,9 +7,14 @@ public class Timer : MonoBehaviour {
     public float seconds;
     public float minutes;
     public bool gameOverTriggered = false;
-    public int intSeconds;
-    public int intMinutes;
+    public static int intSeconds;
+    public static int intMinutes;
     public bool showEnding = false;
+    public bool internetTimeDeleted = false;
+    public bool sleepTimeDeleted = false;
+    public bool shitTimeDeleted = false;
+    public bool phoneTimeDeleted = false;
+    public bool stapleTimeDeleted = false;
 	// Update is called once per frame
 	void Update () {
         if (seconds <= 0)
@@ -33,6 +38,47 @@ public class Timer : MonoBehaviour {
         else {
             seconds -= Time.deltaTime;
         }
+        if (QuestTracker.internet)
+        {
+            if (internetTimeDeleted == false)
+            {
+                minutes--;
+                internetTimeDeleted = true;
+            }
+        }
+        if (QuestTracker.sleep)
+        {
+            if (sleepTimeDeleted == false)
+            {
+                minutes--;
+                sleepTimeDeleted = true;
+            }
+        }
+        if (QuestTracker.shit)
+        {
+            if (shitTimeDeleted == false)
+            {
+                minutes--;
+                shitTimeDeleted = true;
+            }
+        }
+        if (QuestTracker.phone)
+        {
+            if (phoneTimeDeleted == false)
+            {
+                minutes--;
+                phoneTimeDeleted = true;
+            }
+        }
+
+        if (QuestTracker.staple)
+        {
+            if (stapleTimeDeleted == false)
+            {
+                minutes--;
+                stapleTimeDeleted = true;
+            }
+        }
 	}
 
     void OnGUI() {
@@ -42,7 +88,7 @@ public class Timer : MonoBehaviour {
         GUI.Box(new Rect(125, 10, 50, 20), intMinutes.ToString() + ":" + intSeconds.ToString());
         if (showEnding)
         {
-            GUI.Box(new Rect(600, 300, 100, 50), "Game Over!");
+            GUI.Box(new Rect(600, 250, 250, 50), "You run out of time!!! Game Over!");
         }
     }
 

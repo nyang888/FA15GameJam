@@ -10,6 +10,7 @@ public class onClickDoStuff : MonoBehaviour
     private GameObject Cube;
     private Collider objectThatWasPickedUp;
     private bool pickedUp = false;
+    private bool NotEnoughquestTime = false;
 
     // Use this for initialization
     void Start()
@@ -47,7 +48,15 @@ public class onClickDoStuff : MonoBehaviour
                     case "Stapler_Metal":
                     case "Stapler_Top":
                         Debug.Log("Stapler");
-                        QuestTracker.staple = true;
+                        if (Timer.intMinutes >= 1)
+                        {
+                            QuestTracker.staple = true;
+                        }
+                        else
+                        {
+                            NotEnoughquestTime = true;
+                        }
+                        
                         break;
                     case "Lamp":
                         Debug.Log("Lamp");
@@ -55,13 +64,27 @@ public class onClickDoStuff : MonoBehaviour
                         break;
                     case "Phone":
                         Debug.Log("Phone");
-                        QuestTracker.phone = true;
-                        pickUpObject();
+                        if (Timer.intMinutes >= 1)
+                        {
+                            QuestTracker.phone = true;
+                            pickUpObject();
+                        }
+                        else
+                        {
+                            NotEnoughquestTime = true;
+                        }
                         break;
                     case "Laptop":
                     case "Laptop_Screen":
                     case "Laptop_Bottom":
-                        QuestTracker.internet = true;
+                        if (Timer.intMinutes >= 1)
+                        {
+                            QuestTracker.internet = true;
+                        }
+                        else
+                        {
+                            NotEnoughquestTime = true;
+                        }
                         Debug.Log("Laptop");
                         break;
                     case "Bed":
@@ -70,7 +93,14 @@ public class onClickDoStuff : MonoBehaviour
                     case "Bed_Pillow1":
                     case "Bed_Post1":
                     case "Bed_Post2":
-                        QuestTracker.sleep = true;
+                        if (Timer.intMinutes >= 1)
+                        {
+                            QuestTracker.sleep = true;
+                        }
+                        else
+                        {
+                            NotEnoughquestTime = true;
+                        }
                         Debug.Log("Bed");
                         break;
                     case "Chair":
@@ -80,7 +110,14 @@ public class onClickDoStuff : MonoBehaviour
                         Debug.Log("TrashCan");
                         break;
                     case "Toilet2":
-                        QuestTracker.shit = true;
+                        if (Timer.intMinutes >= 1)
+                        {
+                            QuestTracker.shit = true;
+                        }
+                        else
+                        {
+                            NotEnoughquestTime = true;
+                        }
                         Debug.Log("Toilet");
                         break;
                     case "Drawer 1":
@@ -120,6 +157,10 @@ public class onClickDoStuff : MonoBehaviour
         if (currentCollider != null)
         {
             GUI.Box(new Rect(1200, 40, 100, 30), currentCollider.gameObject.name);
+            if (NotEnoughquestTime)
+            {
+                GUI.Box(new Rect(600, 250, 250, 50), "You don't have enough time \nfor the quest!! You lose!");
+            }
         }
     }
 
